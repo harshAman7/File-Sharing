@@ -1,0 +1,174 @@
+/* * {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background: #000;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+}
+
+.img {
+  width: 30%;
+}
+
+.wrapper {
+  width: 600px;
+  height: 400px;
+  margin: auto;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 600;
+  color: #445A6F;
+  margin: 40px 0;
+}
+
+input {
+  margin: 20px 0;
+  width: 300px;
+  padding: 8px;
+}
+
+input:focus-visible {
+  outline: none;
+}
+
+button {
+  width: 150px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #445A6F;
+  border: 1px solid #445A6F;
+  color: #fff;
+  font-size: 20px;
+  margin: 30px 0;
+} */
+ /* Reset margin and padding for all elements */
+/* Reset margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container */
+.container {
+  background-color: transparent;
+  min-height: 100vh; /* Ensure the container takes up at least the full height of the viewport */
+  display: flex;
+  flex-direction: column; /* Stack items vertically for smaller screens */
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Center content vertically */
+}
+
+/* Image */
+.img {
+  width: 100%;
+  max-width: 600px; /* Set a max width for larger screens */
+  height: auto;
+  margin-bottom: 20px; /* Add margin below the image */
+}
+
+/* Wrapper */
+.wrapper {
+  width: 90%; /* Responsive width */
+  max-width: 600px; /* Limit max width */
+  background: #fff;
+  padding: 20px; /* Add padding for spacing */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Shadow for better visual separation */
+}
+
+/* Heading */
+h1 {
+  font-size: 2rem; /* Responsive font size */
+  font-weight: 600;
+  color: #445A6F;
+  margin-bottom: 20px; /* Margin below the heading */
+  text-align: center; /* Center text */
+}
+
+/* Input */
+input {
+  width: 100%; /* Full width within wrapper */
+  max-width: 300px; /* Limit max width */
+  padding: 8px;
+  margin-bottom: 20px; /* Margin below input */
+}
+
+/* Button */
+button {
+  width: 100%; /* Full width within wrapper */
+  max-width: 150px; /* Limit max width */
+  height: 40px;
+  border-radius: 5px;
+  background-color: #445A6F;
+  border: 1px solid #445A6F;
+  color: #fff;
+  font-size: 1rem; /* Responsive font size */
+  margin-top: 20px; /* Margin above button */
+  cursor: pointer; /* Pointer cursor for better UX */
+}
+#img{
+  display: block; /* Make the link a block element to control its width */
+  width: 100%; /* Full width of its container */
+  max-width: 100%; /* Ensure it doesn't exceed container's width */
+  overflow: hidden; /* Hide overflow content */
+  text-overflow: ellipsis; /* Add ellipsis (...) */
+  white-space: nowrap; /* Prevent text from wrapping to the next line */
+  margin-top: 20px; /* Add margin above the link */
+  color: #445A6F; /* Color for the link */
+  text-decoration: none;
+}
+/* Media Queries */
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+
+  input {
+    max-width: 80%; /* Adjust input width for medium screens */
+  }
+
+  button {
+    max-width: 120px;
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+  }
+
+  input {
+    max-width: 90%; /* Adjust input width for smaller screens */
+  }
+
+  button {
+    max-width: 100px;
+    font-size: 0.75rem;
+  }
+}
+
